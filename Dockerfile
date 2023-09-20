@@ -25,3 +25,5 @@ RUN pip install pipenv && pipenv install --system --dev
 
 # Expose the port django is listening on
 EXPOSE 8000
+
+ENTRYPOINT [ "./entrypoint.sh" ]

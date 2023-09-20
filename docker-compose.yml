@@ -3,7 +3,8 @@ version: '3.8'
 services:
   web:
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: start_dev
+    tty: true
     volumes:
       - .:/code
     ports:
@@ -19,26 +20,6 @@ services:
     image: postgres
     volumes:
       - postgres_data:/var/lib/postgresql/data/
-    env_file:
-      - .env.dev
-
-  test:
-    build: .
-    command: python manage.py test
-    volumes:
-      - .:/code
-    depends_on:
-      - db
-    env_file:
-      - .env.dev
-
-  migrate:
-    build: .
-    command: python manage.py migrate
-    volumes:
-      - .:/code
-    depends_on:
-      - db
     env_file:
       - .env.dev
 
