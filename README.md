@@ -8,12 +8,8 @@ docker-compose build
 docker-compose up
 ```
 
-In a separate terminal, run the following to compile tailwind
-```sh
-tailwindcss -i ./src/input.css -o ./static/css/style.css --watch
-```
 
-### Using Bun and Tailwind
+In a separate terminal, run the following to compile tailwind
 ```sh
 # Install packages
 bun install
@@ -23,4 +19,7 @@ bun add -g tailwindcss
 
 # (optional) Create tailwind.config
 tailwindcss init 
+
+# Run this during development
+tailwindcss -i ./src/input.css -o ./static/css/style.css --watch
 ```
