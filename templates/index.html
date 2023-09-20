@@ -1,0 +1,23 @@
+{% extends '_base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<div class="hero min-h-screen bg-base-200">
+    <div class="hero-content text-center">
+      <div class="max-w-md">
+        <h1 class="text-5xl font-bold underline" x-data="{ message: 'I ❤️ Django HTMX Alpine & Tailwind!' }" x-text="message"></h1>
+        <p class="py-6">If you see the big underlined message above, <br> everything is working!</p>
+        <div x-data="{ count: 0 }">
+            <button class="btn btn-primary" x-on:click="count++">👍 Alpine Demo</button>
+            <span x-text="count"></span>
+        </div>
+        
+      </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
