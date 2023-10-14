@@ -1,6 +1,7 @@
 # django-htmx-tailwind
 A Django + HTMX + AlpineJS + TailwindCSS/DaisyUI boilerplate to kickstart your project and start shipping
 
+![demo screenshot](https://raw.githubusercontent.com/rayonx/django-htmx-tailwind/master/static/img/demo.jpg)
 
 ### Quickstart
 ```sh
