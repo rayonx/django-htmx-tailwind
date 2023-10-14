@@ -7,6 +7,8 @@ A Django + HTMX + AlpineJS + TailwindCSS/DaisyUI boilerplate to kickstart your p
 ```sh
 docker-compose build
 docker-compose up
+
+# you should now see the demo running at localhost:8000
 ```
 
 
