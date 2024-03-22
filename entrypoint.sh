@@ -12,7 +12,7 @@ show_help() {
   """
 }
 
-export PYTHONPATH="/openbtc/:$PYTHONPATH"
+export PYTHONPATH="/core/:$PYTHONPATH"
 
 case "$1" in
   "start_dev" )
